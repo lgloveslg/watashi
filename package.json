@@ -1,0 +1,19 @@
+{
+  "name":    "watashi-facebook",
+  "version": "0.0.1",
+
+  "description": "show facebook friends",
+
+  "dependencies": {
+    "async":     "0.1.x",
+    "ejs":       "0.8.x",
+    "express":   "3.0.x",
+    "faceplate": "0.4.x",
+    "socket.io": "0.9.x",
+  },
+
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
