@@ -3,8 +3,7 @@ var express = require('express');
 var util    = require('util');
 
 // create an express webserver
-
-var app = express(
+var app = express.createServer(
   express.logger(),
   express.static(__dirname + '/public'),
   express.bodyParser(),
@@ -15,7 +14,7 @@ var app = express(
     app_id: process.env.FACEBOOK_APP_ID,
     secret: process.env.FACEBOOK_SECRET,
     scope:  'user_likes,user_photos,user_photo_video_tags'
-  })    
+  })
 );
 
 // listen to the PORT given to us in the environment
