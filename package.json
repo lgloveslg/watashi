@@ -1,18 +1,28 @@
 {
-  "name":    "facebook-template-node",
+  "name": "watashi",
   "version": "0.0.1",
-
-  "description": "Template app for Heroku / Facebook integration, Node.js language",
-
-  "dependencies": {
-    "async":     "0.1.18",
-    "ejs":       "0.4.3",
-    "express":   "2.4.6",
-    "faceplate": "0.4.x"
+  "author": "Hiro <rhmoraes@gmail.com>",
+  "description": "facebook friends",
+  "scripts": {
+    "start": "foreman start",
+    "test": "make test"
   },
-
+  "dependencies": {
+    "ejs":            "0.8.x",
+    "express":        "3.0.x",
+    "ratchetio":      "*",
+    "faceplate":      "0.4.x"
+  },
+  "devDependencies": {
+    "mocha": "1.7.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anotherhiro/watashi.git"
+  },
+  "license": "MIT",
   "engines": {
-    "node": "0.8.x", 
+    "node": "0.8.x",
     "npm": "1.1.x"
   }
 }
